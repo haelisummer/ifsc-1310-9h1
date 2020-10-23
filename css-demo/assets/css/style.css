@@ -1,13 +1,23 @@
 /* ---------Box Sizing--------- */
 
-html {
+html{
   box-sizing: border-box;
 }
 *,
-*:before
+*:before,
 *:after {
   box-sizing: inherit;
 }
+
+/* ---------Utility Styles--------- */
+
+.container{
+  width: 80vw;
+  margin:40px auto;
+  max-width: 600px
+}
+
+
 
 /* ---------Global Styles--------- */
 body{
@@ -15,7 +25,7 @@ body{
   margin:0;
 }
 header.primary{
-  background-color:pink;
+  background-color:white;
   text-align:center;
   color:gray;
   text-shadow:2px 2px #fe8069
@@ -39,8 +49,67 @@ header.primary h1{
   margin: 20px 0;
 }
 
-header.primary h1{
+header.primary h1 a{
   text-decoration:none;
   color:gray;
 }
 
+header.primary h2{
+  font-size:2rem;
+  margin:20px auto 40px;
+}
+
+header.primary nav{
+  width: 80vw;
+  margin: auto;
+  max-width:600px
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;  
+}
+
+header.primary nav ul li{ 
+list-style-type: none;
+}
+
+header.primary nav ul li a:link, header.primary nav ul li a:visited{
+  color:blue;
+  text-decoration: none;
+  background-color: orange;
+  background-color: rgba;
+  padding: 5px;
+  border-radius: 10px;
+  transition:.25s;
+}
+
+header.primary nav ul li a:hover, header.primary nav ul li a:active{
+  background-color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:690px){
+  header.primary nav ul {
+    flex-direction:column;
+    max-width:420px;
+    margin:auto 
+  }
+  
+  header.primary nav a{
+    display:block;
+  }
+   
+}
