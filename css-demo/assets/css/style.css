@@ -9,12 +9,22 @@ html{
   box-sizing: inherit;
 }
 
+/* ---------Utility Styles--------- */
+
+.container{
+  width: 80vw;
+  margin:40px auto;
+  max-width: 600px
+}
+
+
+
 /* ---------Global Styles--------- */
 body{
   font-family: 'Open Sans', sans-serif;
   margin:0;
 }
-h1{
+header.primary{
   background-color:white;
   text-align:center;
   color:gray;
@@ -31,47 +41,74 @@ h1{
   
   /* Shorthand T,R,B,L */
   padding: 40px 40px 20px 40px;
-        
+       
 }
 
-nav{
-    width: 80vw;
+header.primary h1{
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+
+header.primary h1 a{
+  text-decoration:none;
+  color:gray;
+}
+
+header.primary h2{
+  font-size:2rem;
+  margin:20px auto 40px;
+}
+
+header.primary nav{
+  width: 80vw;
   margin: auto;
   max-width:600px
 }
 
-nav ul{
-   display:flex;
+header.primary nav ul{
+  display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;  
 }
 
- nav ul li{ 
+header.primary nav ul li{ 
 list-style-type: none;
 }
 
- nav ul li a:link, header.primary nav ul li a:visited{
+header.primary nav ul li a:link, header.primary nav ul li a:visited{
   color:blue;
   text-decoration: none;
   background-color: orange;
   background-color: rgba;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   transition:.25s;
 }
 
-nav ul li a:hover, nav ul li a:active{
+header.primary nav ul li a:hover, header.primary nav ul li a:active{
   background-color:gray;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:690px){
-  nav ul {
-    flex-direction:row;
+  header.primary nav ul {
+    flex-direction:column;
     max-width:420px;
     margin:auto 
   }
   
-  nav a{
+  header.primary nav a{
     display:block;
   }
    
