@@ -89,13 +89,10 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
   background-color:gray;
 }
 
-
-
-
-
-
-
-
+#intro{
+  border-bottom: 1px solid;
+  border-top: 5px double;
+}
 
 
 
@@ -113,3 +110,5 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
   }
    
 }
+
+
