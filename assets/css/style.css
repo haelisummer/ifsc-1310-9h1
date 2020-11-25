@@ -35,14 +35,14 @@ h1{
 }
 
 nav{
-    width: 80vw;
+  width: 80vw;
   margin: auto;
-  max-width:600px
+  max-width:600vw
 }
 
 nav ul{
-   display:flex;
-  flex-direction: row;
+  display:flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -63,6 +63,8 @@ list-style-type: none;
 nav ul li a:hover, nav ul li a:active{
   background-color:gray;
 }
+
+nav ul li Float Exercises
 
 @media screen and (max-width:690px){
   nav ul {
