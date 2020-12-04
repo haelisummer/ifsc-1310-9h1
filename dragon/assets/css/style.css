@@ -21,29 +21,29 @@ html {
 
 .container {
   width: 80vw;
-  margin: 40px auto;
+  margin: 10px auto;
   max-width: 900px;
 }
 
 .img-right {
   float: right;
   margin: 10px 0 10px 20px;
-  border: 1px solid #c0c0c0;
-  padding: 5px;
+  border: 2px solid navy;
+  padding: 10px;
 }
 
 .img-left {
   float: left;
   margin: 10px 20px 10px 0;
-  border: 1px solid #c0c0c0;
-  padding: 5px;
+  border: 2px solid navy;
+  padding: 10px;
 }
 
 .img-center {
   display: block;
   margin: 20px auto;
-  border: 1px solid #c0c0c0;
-  padding: 5px;
+  border: 2px solid navy;
+  padding: 10px;
 }
 
 /* ---- Responsive Images ----*/
@@ -55,7 +55,7 @@ img {
 /* ----- Global Styles ---- */
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "goldman";
   margin: 0;
 }
 
@@ -64,10 +64,10 @@ body {
 header.primary {
   background-color: #181c1f;
   text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px #000000;
+  color: white;
+  text-shadow: 1px 2px navy;
   /* Shorhand T,R,B,L*/
-  padding: 6em 2em;
+  padding: 2em 4em;
   position: relative;
 }
 
@@ -80,17 +80,17 @@ header.primary::before {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 header.primary h1 {
-  font-size: 3.2rem;
+  font-size: 3.2 rem;
   margin: 20px 0;
   position: relative;
 }
 
 header.primary h1 a {
-  color: #ffffff;
+  color: navy;
   background-image: url("https://assets.codepen.io/7248/logo-2.png");
   display: block;
   width: 450px;
@@ -102,8 +102,8 @@ header.primary h1 a {
 }
 
 header.primary h2 {
-  font-family: "Goldman", cursive;
-  font-size: 2em;
+  font-family: "Goldman";
+  font-size: 3.2em;
   /* Shorhand Three Value Top, Left/Right, Bottom*/
   margin: 20px auto 40px;
   position: relative;
@@ -129,52 +129,52 @@ header.primary nav a:link,
 header.primary nav a:visited {
   color: white;
   text-decoration: none;
-  background-color: #000000;
-  background-color: rgba(142, 166, 184, 0.4);
-  padding: 8px 16px;
-  border-radius: 10px;
-  transition: 0.6s;
+  background-color:navy;
+  background-color: rgba(140, 160, 180, 0.6);
+  padding: 10px 16px;
+  border-radius: 15px;
+  transition: 0.2s;
   display: block;
 }
 
 header.primary nav a:hover,
 header.primary nav a:active {
-  background-color: rgba(51, 83, 107, 0.8);
+  background-color: rgba(50, 80, 100, 0.9);
 }
 
 /* ------------- Content --------------- */
 
 section#content {
-  padding: 4em 0;
+  padding: 1em 0;
 }
 
 section#content h3{
-  font-family: "Goldman", cursive;
-  font-size: 1.2em;
-  color: #33536b;
-  border-bottom: 1px solid #c0c0c0;
+  font-family: "Goldman";
+  font-size: 1.5em;
+  color: navy;
+  border-bottom: 1px solid black;
 }
 
 section#content table{
   width:100%;
-  border: 1px solid #c0c0c0;
+  border: 1px solid black;
   border-collapse:collapse;
 }
 
 section#content caption{
-  font-weight:bold;
-  font-size:1.5rem;
-  margin:10px;
-  font-family: "Goldman", cursive;
-  font-size: 2em;
-  color: #33536b;
+  font-weight:double bold;
+  font-size:10rem;
+  margin:1px;
+  font-family: "Goldman";
+  font-size: 1 em;
+  color: white;
 }
 
 section#content th {
-  background:#181C1F;
+  background:navy;
   color:#ffffff;
   text-align:left;
-  padding:10px;
+  padding:2px;
 }
 
 section#content td{
@@ -193,7 +193,7 @@ section#content tr:hover{
 /* ------------- Articles --------------- */
 
 section#articles {
-  background: #181c1f;
+  background: gray;
 }
 
 section#articles .container {
@@ -208,29 +208,29 @@ section#articles .container {
 section#articles h2,
 #content h2 {
   flex: 0 0 100%;
-  color: #33536b;
+  color: gray;
   text-align: center;
-  font-family: "Goldman", cursive;
-  font-size: 2em;
+  font-family: "Goldman";
+  font-size: 2.5em;
 }
 
 section#articles h2 {
-  color: #fff;
-  text-shadow: 2px 2px #000;
+  color: white;
+  text-shadow: 2px 2px navy;
 }
 
 #articles article.post {
   width: 30%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   padding: 10px;
   transition: 0.6s;
   font-size: 0.8rem;
   border-radius: 10px;
-  background: #fff;
+  background: white;
 }
 
 #articles article.post h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   text-shadow: none;
 }
 
@@ -241,8 +241,8 @@ section#articles h2 {
 #articles article time,
 #articles article figcaption,
 #articles article footer {
-  font-size: 0.8em;
-  color: #c0c0c0;
+  font-size: 0.9em;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -256,20 +256,20 @@ section#articles h2 {
 }
 
 #articles .post img {
-  border-radius: 10px;
+  border-radius: 1px;
 }
 
 #articles ul {
   padding: 0 20px;
 }
 #articles li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* ------------- Hero --------------- */
 
 #hero {
-  padding: 4em 0;
+  padding: 1em 0;
 }
 
 
@@ -277,8 +277,8 @@ section#articles h2 {
 
 /* Attribute Selector */
 aside[role="complementary"] {
-  background-color: #181c1f;
-  color: #ffffff;
+  background-color: gray;
+  color: white;
   padding: 2.5em;
 }
 
@@ -289,11 +289,11 @@ aside .container {
 }
 
 aside article.widget {
-  width: 40%;
+  width: 50%;
 }
 
 .widget.overview table {
-  font-size: 0.7em;
+  font-size: .8em;
   border-collapse: collapse;
   width:100%;
 }
@@ -327,7 +327,7 @@ aside article footer {
 /*------ Footer ------*/
 
 footer#colophon {
-  background-color: #1b2c38;
+  background-color:gray;
 }
 
 #colophon h6 {
