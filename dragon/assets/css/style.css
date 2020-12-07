@@ -280,6 +280,7 @@ aside[role="complementary"] {
   background-color: gray;
   color: white;
   padding: 2.5em;
+  text-align: center;
 }
 
 aside .container {
@@ -307,6 +308,16 @@ aside article.widget {
   text-align: right;
 }
 
+.widget.recent.missions table {
+  font-size: .8em;
+  border-collapse: collapse;
+  width:100%;
+}
+
+.widget.recent.missions table td {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
 aside article a:link,
 aside article a:visited {
   color: #ffffff;
