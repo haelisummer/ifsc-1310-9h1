@@ -37,13 +37,15 @@ h1{
 nav{
   width: 80vw;
   margin: auto;
-  max-width:600vw
+  max-width:600vw;
+  text-align:center;
 }
 
 nav ul{
   display:flex;
-  flex-direction: column;
+  flex-direction: Column;
   justify-content: space-between;
+  padding:10px;
 }
 
  nav ul li{ 
